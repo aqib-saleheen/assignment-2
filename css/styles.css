@@ -102,6 +102,10 @@ body {
     color: #131313;
 }
 
+.banner-info h1>span {
+    color: #f88400;
+}
+
 .banner-info p {
     padding: 30px 200px;
     font-weight: 400;
@@ -376,11 +380,45 @@ body {
 /* Responsive Styles --------------------------- */
 
 @media only screen and (max-width:576px) {
+    .nav-container {
+        width: auto;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .nav-container .nav-title {
+        width: auto;
+    }
+    
+    .nav-container .nav-title .nav-menu {
+        width: auto;
+    }
+    
+    .nav-container .nav-title h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .nav-menu ul>li {
+        margin-left: 0px;
+        font-size: 20px;
+    }
 
     .banner-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 40px;
     }
 
     .banner-info {
@@ -389,8 +427,8 @@ body {
     }
 
     .banner-info h1 {
-        /* padding-top: 120px; */
-        font-size: 60px;
+        padding-top: 0 50px;
+        font-size: 55px;
     }
 
     .banner-info p {
@@ -410,7 +448,7 @@ body {
     .quick-container {
         margin-top: 80px;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         gap: 0px;
     }
