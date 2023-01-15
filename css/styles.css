@@ -7,7 +7,7 @@
 
 .center {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1920px;
 }
 
 .banner-bg {
@@ -41,27 +41,25 @@ body {
 
 
 .nav-container {
-    display: flex;
+    width: 1440px;
     height: 50px;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-container .nav-title {
     width: 200px;
 }
 
+.nav-container .nav-title .nav-menu {
+    width: 400px;
+}
+
 .nav-container .nav-title h2 {
     font-weight: 700;
     font-size: 28px;
     color: #131313;
-}
-
-.nav-container .nav-gap {
-    width: 700px;
-}
-
-.nav-container .nav-title .nav-menu {
-    width: 300px;
 }
 
 .nav-menu ul {
@@ -84,8 +82,15 @@ body {
 }
 
 /* Banner Styles ----------------------------- */
+
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .banner-info {
     text-align: center;
+    padding: 0 100px;
 }
 
 .banner-info h1 {
@@ -105,8 +110,8 @@ body {
 
 .banner-image img {
     margin: 50px 0;
-    width: 1200px;
-    height: 600px;
+    width: 1440px;
+    height: 700px;
     background: url(../images/banner.png);
     border-radius: 8px;
 }
@@ -116,6 +121,8 @@ body {
 .quick-container {
     margin-top: 80px;
     display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
 .quick-images {
@@ -132,7 +139,8 @@ body {
 }
 
 .quick-info {
-    margin: 200px 0 0 60px;
+    margin: 200px 0px;
+    width: 360px;
 }
 
 .quick-info h2 {
@@ -162,6 +170,7 @@ body {
 .features-container {
     margin-top: 80px;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -231,7 +240,8 @@ body {
     margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
 }
 
 .fact-info-container .fact-item {
@@ -349,10 +359,16 @@ body {
 
 .footer-container p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
     color: #424242;
     padding: 20px 0;
+}
+
+/* Responsive Styles --------------------------- */
+
+@media only screen {
+    
 }
 
 /* End Styles --------------------------------- */
